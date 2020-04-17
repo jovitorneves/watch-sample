@@ -87,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEAD88EB2448E27B00FFDE93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC7B842448C03600D66504 /* Interface.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CEBC7B742448C03600D66504 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +117,7 @@
 		CEBC7B832448C03600D66504 /* watch-sample WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				CEBC7B842448C03600D66504 /* Interface.storyboard */,
+				CEAD88EB2448E27B00FFDE93 /* View */,
 				CEBC7B872448C03900D66504 /* Assets.xcassets */,
 				CEBC7B892448C03900D66504 /* Info.plist */,
 			);
