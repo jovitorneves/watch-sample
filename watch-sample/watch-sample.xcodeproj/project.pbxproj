@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6967D5244E1E1E00AEE68A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */; };
+		CE7374DF2450692800F9A4BC /* AuthenticationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7374DE2450692800F9A4BC /* AuthenticationEntity.swift */; };
+		CE7374E22450C97C00F9A4BC /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7374E12450C97C00F9A4BC /* Bindable.swift */; };
 		CEBC7B802448C03600D66504 /* watch-sample WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEBC7B7F2448C03600D66504 /* watch-sample WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEBC7B862448C03600D66504 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC7B842448C03600D66504 /* Interface.storyboard */; };
 		CEBC7B882448C03900D66504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC7B872448C03900D66504 /* Assets.xcassets */; };
@@ -61,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		CE7374DE2450692800F9A4BC /* AuthenticationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEntity.swift; sourceTree = "<group>"; };
+		CE7374E12450C97C00F9A4BC /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		CEBC7B7B2448C03600D66504 /* watch-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC7B7F2448C03600D66504 /* watch-sample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch-sample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC7B852448C03600D66504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -87,6 +93,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6967D6244E1E4D00AEE68A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC7B932448C03900D66504 /* InterfaceController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE6967D7244E1E5700AEE68A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE7374E02450693A00F9A4BC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE7374DE2450692800F9A4BC /* AuthenticationEntity.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE7374E32450CB7500F9A4BC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CE7374E12450C97C00F9A4BC /* Bindable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CEAD88EB2448E27B00FFDE93 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +165,10 @@
 		CEBC7B922448C03900D66504 /* watch-sample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CEBC7B932448C03900D66504 /* InterfaceController.swift */,
+				CE7374E02450693A00F9A4BC /* Repository */,
+				CE6967D7244E1E5700AEE68A /* ViewModel */,
+				CE6967D6244E1E4D00AEE68A /* View */,
+				CE7374E32450CB7500F9A4BC /* Util */,
 				CEBC7B952448C03900D66504 /* ExtensionDelegate.swift */,
 				CEBC7B972448C03900D66504 /* NotificationController.swift */,
 				CEBC7B992448C03900D66504 /* ComplicationController.swift */,
@@ -265,7 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7374DF2450692800F9A4BC /* AuthenticationEntity.swift in Sources */,
+				CE7374E22450C97C00F9A4BC /* Bindable.swift in Sources */,
 				CEBC7B982448C03900D66504 /* NotificationController.swift in Sources */,
+				CE6967D5244E1E1E00AEE68A /* AuthenticationViewModel.swift in Sources */,
 				CEBC7B9A2448C03900D66504 /* ComplicationController.swift in Sources */,
 				CEBC7B962448C03900D66504 /* ExtensionDelegate.swift in Sources */,
 				CEBC7B942448C03900D66504 /* InterfaceController.swift in Sources */,

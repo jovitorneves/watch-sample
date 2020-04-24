@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9He-op-Wsz">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -279,14 +279,23 @@
                                         <button width="0.34000000000000002" height="1" alignment="left" title="1" id="xUt-Pd-mQu">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key1" destination="AgC-eL-Hgc" id="y6a-zU-rY4"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="2" id="wyL-XJ-0gS">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key2" destination="AgC-eL-Hgc" id="QJv-jP-tgt"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="3" id="WMN-W1-Ssy">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key3" destination="AgC-eL-Hgc" id="XWe-W0-kfC"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -295,14 +304,23 @@
                                         <button width="0.34000000000000002" height="1" alignment="left" title="4" id="oLH-s5-qIi">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key4" destination="AgC-eL-Hgc" id="I0K-ze-gLT"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="5" id="wLa-b0-MGc">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key5" destination="AgC-eL-Hgc" id="7iZ-hK-wI9"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="6" id="bqm-Hs-IDF">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key6" destination="AgC-eL-Hgc" id="hOY-iz-oYm"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -311,14 +329,23 @@
                                         <button width="0.34000000000000002" height="1" alignment="left" title="7" id="Z9a-up-7Rs">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key7" destination="AgC-eL-Hgc" id="cwa-9m-39j"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="8" id="hEi-Br-q8d">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key8" destination="AgC-eL-Hgc" id="jWY-MA-lB8"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" title="9" id="8IY-eH-W4A">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key9" destination="AgC-eL-Hgc" id="kCs-B6-KTV"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -331,10 +358,16 @@
                                         <button width="0.34000000000000002" height="1" alignment="left" title="0" id="FqR-CN-PL4">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="key0" destination="AgC-eL-Hgc" id="SE6-7S-sBa"/>
+                                            </connections>
                                         </button>
                                         <button width="0.34000000000000002" height="1" alignment="left" backgroundImage="delete.left.fill" catalog="system" id="bbB-VV-xxy">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="keyDelete" destination="AgC-eL-Hgc" id="ARR-0R-Z1r"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -343,12 +376,18 @@
                                         <button width="1" height="1" alignment="center" title="confirmar!" id="5Xg-Zw-Jz7">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="okAction" destination="AgC-eL-Hgc" id="eRq-2H-cJ1"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="displayPasswordLabel" destination="OYo-R7-Cfg" id="C2q-3n-zDq"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="118" y="275"/>
