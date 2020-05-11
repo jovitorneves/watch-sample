@@ -228,33 +228,39 @@
             </objects>
             <point key="canvasLocation" x="-418" y="269"/>
         </scene>
-        <!--Interface Controller-->
+        <!--TableProductsInterfaceController-->
         <scene sceneID="QIi-xz-c9q">
             <objects>
-                <controller id="76C-jy-bB5">
+                <controller identifier="TableProductsInterfaceController" id="76C-jy-bB5" customClass="TableProductsInterfaceController" customModule="watch_sample_WatchKit_App" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="UAe-0S-IKO">
                             <items>
-                                <tableRow id="qq0-2H-979">
+                                <tableRow identifier="ProductRow" id="qq0-2H-979" customClass="ProductRow" customModule="watch_sample_WatchKit_App" customModuleProvider="target">
                                     <group key="rootItem" width="1" alignment="left" id="tYU-Oi-vgf" userLabel="products">
                                         <items>
-                                            <imageView width="20" alignment="left" verticalAlignment="center" image="clock.fill" catalog="system" id="fMe-28-sxc">
+                                            <imageView width="20" alignment="left" verticalAlignment="center" image="clock.fill" catalog="system" contentMode="scaleAspectFit" id="fMe-28-sxc">
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
-                                            <button alignment="left" title="investimentos" id="45J-DW-EYS">
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <label width="0.69999999999999996" height="1" alignment="left" text="Investimento" textAlignment="center" id="lDP-Z1-IT1">
                                                 <fontDescription key="font" type="boldSystem" pointSize="14"/>
-                                            </button>
+                                            </label>
                                         </items>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="iconProductImg" destination="fMe-28-sxc" id="PB4-hT-i5P"/>
+                                        <outlet property="nameProductLabel" destination="lDP-Z1-IT1" id="5le-Nu-wx1"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="productsTable" destination="UAe-0S-IKO" id="j7A-fm-mri"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-172" y="269"/>
+            <point key="canvasLocation" x="-154" y="-94"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
@@ -267,7 +273,7 @@
                                     <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="13"/>
                                 </label>
-                                <label width="1" alignment="center" text="********" textAlignment="center" id="OYo-R7-Cfg">
+                                <label width="1" alignment="center" text="○○○○○○○○" textAlignment="center" id="OYo-R7-Cfg">
                                     <fontDescription key="font" type="system" pointSize="19"/>
                                 </label>
                             </items>
@@ -373,7 +379,7 @@
                                 </group>
                                 <group width="1" height="25" alignment="left" id="wPQ-W0-y8f" userLabel="row5">
                                     <items>
-                                        <button width="1" height="1" alignment="center" title="confirmar!" id="5Xg-Zw-Jz7">
+                                        <button width="1" height="1" alignment="center" title="confirmar!" enabled="NO" id="5Xg-Zw-Jz7">
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="font" type="boldSystem" pointSize="15"/>
                                             <connections>
@@ -386,11 +392,12 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="confirmarButton" destination="5Xg-Zw-Jz7" id="IhC-GR-W50"/>
                         <outlet property="displayPasswordLabel" destination="OYo-R7-Cfg" id="C2q-3n-zDq"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="118" y="275"/>
+            <point key="canvasLocation" x="-441" y="-93"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -11,8 +11,10 @@ import Foundation
 //Classe responsavel por fazer consultas na API
 class AuthenticationEntity {
     
+    //MARK: - Properties
     private var isChecked: Bool!
     
+    //MARK: Verification
     func checkPasswordRequest(password :String!) -> Bool{
         
         return password != "00000000"

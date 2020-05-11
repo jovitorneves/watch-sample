@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2384A5246064F400BEED6F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2384A4246064F400BEED6F /* ProductRow.swift */; };
+		BB2384A824609B5F00BEED6F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2384A724609B5F00BEED6F /* ProductModel.swift */; };
+		BB92F40D2458717C00CFBCFF /* TableProductsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB92F40C2458717C00CFBCFF /* TableProductsInterfaceController.swift */; };
+		BB92F40F2458719D00CFBCFF /* TableProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB92F40E2458719D00CFBCFF /* TableProductsViewModel.swift */; };
 		CE6967D5244E1E1E00AEE68A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */; };
 		CE7374DF2450692800F9A4BC /* AuthenticationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7374DE2450692800F9A4BC /* AuthenticationEntity.swift */; };
 		CE7374E22450C97C00F9A4BC /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7374E12450C97C00F9A4BC /* Bindable.swift */; };
@@ -64,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB2384A4246064F400BEED6F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		BB2384A724609B5F00BEED6F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		BB92F40C2458717C00CFBCFF /* TableProductsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProductsInterfaceController.swift; sourceTree = "<group>"; };
+		BB92F40E2458719D00CFBCFF /* TableProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProductsViewModel.swift; sourceTree = "<group>"; };
 		CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		CE7374DE2450692800F9A4BC /* AuthenticationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEntity.swift; sourceTree = "<group>"; };
 		CE7374E12450C97C00F9A4BC /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
@@ -93,10 +101,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE6967D6244E1E4D00AEE68A /* View */ = {
+		BB2384A0246064AE00BEED6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB92F40C2458717C00CFBCFF /* TableProductsInterfaceController.swift */,
+				BB2384A62460650700BEED6F /* Row */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		BB2384A1246064C800BEED6F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				CEBC7B932448C03900D66504 /* InterfaceController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BB2384A2246064CF00BEED6F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BB2384A3246064D700BEED6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB92F40E2458719D00CFBCFF /* TableProductsViewModel.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		BB2384A62460650700BEED6F /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				BB2384A4246064F400BEED6F /* ProductRow.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		BB2384A924609B6300BEED6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB2384A724609B5F00BEED6F /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE6967D6244E1E4D00AEE68A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB2384A1246064C800BEED6F /* Authentication */,
+				BB2384A0246064AE00BEED6F /* Products */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,7 +162,8 @@
 		CE6967D7244E1E5700AEE68A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CE6967D4244E1E1E00AEE68A /* AuthenticationViewModel.swift */,
+				BB2384A2246064CF00BEED6F /* Authentication */,
+				BB2384A3246064D700BEED6F /* Products */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7374E02450693A00F9A4BC /* Repository */,
+				BB2384A924609B6300BEED6F /* Model */,
 				CE6967D7244E1E5700AEE68A /* ViewModel */,
 				CE6967D6244E1E4D00AEE68A /* View */,
 				CE7374E32450CB7500F9A4BC /* Util */,
@@ -308,8 +368,12 @@
 			files = (
 				CE7374DF2450692800F9A4BC /* AuthenticationEntity.swift in Sources */,
 				CE7374E22450C97C00F9A4BC /* Bindable.swift in Sources */,
+				BB2384A5246064F400BEED6F /* ProductRow.swift in Sources */,
+				BB92F40D2458717C00CFBCFF /* TableProductsInterfaceController.swift in Sources */,
 				CEBC7B982448C03900D66504 /* NotificationController.swift in Sources */,
+				BB92F40F2458719D00CFBCFF /* TableProductsViewModel.swift in Sources */,
 				CE6967D5244E1E1E00AEE68A /* AuthenticationViewModel.swift in Sources */,
+				BB2384A824609B5F00BEED6F /* ProductModel.swift in Sources */,
 				CEBC7B9A2448C03900D66504 /* ComplicationController.swift in Sources */,
 				CEBC7B962448C03900D66504 /* ExtensionDelegate.swift in Sources */,
 				CEBC7B942448C03900D66504 /* InterfaceController.swift in Sources */,

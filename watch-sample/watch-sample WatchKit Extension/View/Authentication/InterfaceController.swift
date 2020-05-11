@@ -7,53 +7,47 @@
 //
 
 import WatchKit
-import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-    //MARK: Outlet
+    //MARK: - Outlet
     @IBOutlet weak var displayPasswordLabel: WKInterfaceLabel!
-    @IBOutlet var allButton = [WKInterfaceButton]()
-    @IBOutlet var key1Button: WKInterfaceButton!
-    @IBOutlet var key2Button: WKInterfaceButton!
+    @IBOutlet weak var confirmarButton: WKInterfaceButton!
     
-    private var viewModel = AuthenticationViewModel()
+    //MARK: - Properties
+    private var viewModel: AuthenticationViewModel!
     
-    //MARK: Life Cycle
+    //MARK: - Life Cycle
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
+        //router
+        //WKExtension.shared().rootInterfaceController
+        
+        self.viewModel = AuthenticationViewModel(view: self)
         // Configure interface objects here.
         setBindable()
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-    
-    func setupButton(){
-        allButton.append(key1Button)
-        allButton.append(key2Button)
-        
-        for button in allButton{
-            print("Description button: " + button.description)
-        }
-    }
-    
+    //MARK: - Setup
     func setBindable(){
         viewModel.feedbackPasswordLabel.bind { (feedbackPassword) in
-            print("testando:", feedbackPassword)
             self.displayPasswordLabel.setText(feedbackPassword)
         }
         
-//        viewModel.feedbackPasswordLabel?.listener((teste) {
-//            })
+        viewModel.isButtonEnabled.bind { (isButtonEnabled) in
+            self.confirmarButton.setEnabled(isButtonEnabled)
+        }
+    }
+    
+    func statusLabel(){
+        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .allowEmoji) { (result) in
+            guard let result = result else { return }
+            OperationQueue.main.addOperation {
+                self.dismissTextInputController()
+                self.displayPasswordLabel.setText(result[0] as? String)
+            }
+        }
     }
     
     //MARK: - Actions
